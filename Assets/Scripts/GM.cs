@@ -2,7 +2,8 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class GM : MonoBehaviour {
+public class GM : MonoBehaviour
+{
 	
 	public int lives = 3;
 	public int bricks = 20;
