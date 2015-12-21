@@ -2,6 +2,10 @@
 using System.Collections;
 using UnityEngine.UI;
 
+/**
+ * GM = Game manager?
+ * 
+ * */
 public class GM : MonoBehaviour
 {
 	
