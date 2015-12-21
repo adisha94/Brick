@@ -39,7 +39,10 @@ public class GM : MonoBehaviour
 		clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
 		Instantiate(bricksPrefab, transform.position, Quaternion.identity);
 	}
-	
+
+	/**
+	 * 
+	 **/
 	void CheckGameOver()
 	{
 		if (bricks < 1)
@@ -57,7 +60,11 @@ public class GM : MonoBehaviour
 		}
 		
 	}
-	
+
+	/**
+	 * 
+	 * Resets the game when method is called
+	 **/
 	void Reset()
 	{
 		Time.timeScale = 1f;
