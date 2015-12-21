@@ -3,8 +3,8 @@ using System.Collections;
 using UnityEngine.UI;
 
 /**
- * GM = Game manager?
- * 
+ * GM = Game manager script
+ * Keeps track of basic mechanics of the game
  * */
 public class GM : MonoBehaviour
 {
@@ -33,7 +33,11 @@ public class GM : MonoBehaviour
 		Setup();
 		
 	}
-	
+
+	/**
+	 * Basic setup of the scene
+	 * 
+	 * */
 	public void Setup()
 	{
 		clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
@@ -70,7 +74,11 @@ public class GM : MonoBehaviour
 		Time.timeScale = 1f;
 		Application.LoadLevel(Application.loadedLevel);
 	}
-	
+
+	/**
+	 *
+	 * Method executes when ball is missed
+	 **/
 	public void LoseLife()
 	{
 		lives--;
@@ -80,12 +88,19 @@ public class GM : MonoBehaviour
 		Invoke ("SetupPaddle", resetDelay);
 		CheckGameOver();
 	}
-	
+
+	/**
+	 * 
+	 * initial setup of the paddle upon application loaduout
+	 **/
 	void SetupPaddle()
 	{
 		clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
 	}
-	
+
+	/**
+	 * Executes upon impact of ball on object
+	 **/
 	public void DestroyBrick()
 	{
 		bricks--;
