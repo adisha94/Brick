@@ -45,7 +45,7 @@ public class GM : MonoBehaviour
 	}
 
 	/**
-	 * 
+	 * checks to see which end game text we are going to display
 	 **/
 	void CheckGameOver()
 	{
@@ -71,7 +71,7 @@ public class GM : MonoBehaviour
 	 **/
 	void Reset()
 	{
-		Time.timeScale = 1f;
+		Time.timeScale = 1f; // goes to normal time
 		Application.LoadLevel(Application.loadedLevel);
 	}
 

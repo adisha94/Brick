@@ -1,15 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Bricks : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+public class Bricks : MonoBehaviour
+{
+	public GameObject brickParticle; // refers to the BrickParticle object in the scene view
 }
