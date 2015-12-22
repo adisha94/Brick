@@ -21,6 +21,7 @@ public class GM : MonoBehaviour
 	public static GM instance = null;
 	
 	private GameObject clonePaddle;
+	private GameObject cloneBricks;
 	
 	// Use this for initialization
 	void Awake () 
@@ -39,8 +40,8 @@ public class GM : MonoBehaviour
 	 * */
 	public void Setup()
 	{
-		clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
-		Instantiate(bricksPrefab, transform.position, Quaternion.identity);
+		SetupPaddle ();
+		SetupBricks ();
 	}
 
 	/**
@@ -54,8 +55,7 @@ public class GM : MonoBehaviour
 			Time.timeScale = .25f;
 			Invoke ("Reset", resetDelay);
 		}
-		
-		if (lives < 1)
+		else if (lives < 1)
 		{
 			gameOver.SetActive(true);
 			Time.timeScale = .25f;
@@ -89,11 +89,20 @@ public class GM : MonoBehaviour
 
 	/**
 	 * 
-	 * initial setup of the paddle upon application loaduout
+	 * initial setup of the paddle upon level loaduout
 	 **/
 	void SetupPaddle()
 	{
 		clonePaddle = Instantiate(paddle, transform.position, Quaternion.identity) as GameObject;
+	}
+
+	/**
+	 * 
+	 * initial setup of the Bricks upon level loaduout
+	 **/
+	void SetupBricks()
+	{
+		cloneBricks = Instantiate (bricksPrefab, transform.position, Quaternion.identity) as GameObject;
 	}
 
 	/**
