@@ -1,10 +1,16 @@
 fileFormatVersion: 2
 guid: 3f7c2399f624f4e08afecf24bca7d19a
-timeCreated: 1450580987
+timeCreated: 1450746230
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - livesText: {instanceID: 0}
+  - gameOver: {fileID: 181182, guid: b7196857a4eb049c0a94c31f15e0a3fa, type: 2}
+  - youWon: {fileID: 124454, guid: ea983a33161ce4632b5ba682da618fac, type: 2}
+  - bricksPrefab: {fileID: 157302, guid: eab1bfbc2f3b64551be1da36828928f1, type: 2}
+  - paddle: {fileID: 162498, guid: 7b7893ea8fb66479ca82179ebe04a0ff, type: 2}
+  - deathParticles: {fileID: 166982, guid: aabaf56ecaadb42adaf9066e35dde5d7, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

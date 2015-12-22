@@ -5,11 +5,13 @@ public class Bricks : MonoBehaviour
 {
 	public GameObject brickParticle; // refers to the BrickParticle object in the scene view
 
+	/*
+	 * Will activate once paddle makes impact with the bricks
+	 **/
 	void OnCollisionEnter(Collision other)
 	{
 		Instantiate (brickParticle, transform.position, Quaternion.identity);
 		GM.instance.DestroyBrick();
 		Destroy(gameObject);
 	}
-
 }
