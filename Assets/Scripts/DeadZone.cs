@@ -7,7 +7,7 @@ using System.Collections;
  * */
 public class DeadZone : MonoBehaviour
 {
-	void OnTriggerEnter (Collider other)
+	void OnTriggerEnter (Collider col)
 	{
 		GM.instance.LoseLife ();
 	}
