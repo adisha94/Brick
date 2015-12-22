@@ -36,7 +36,6 @@ public class GM : MonoBehaviour
 
 	/**
 	 * Basic setup of the scene
-	 * 
 	 * */
 	public void Setup()
 	{
@@ -61,8 +60,7 @@ public class GM : MonoBehaviour
 			gameOver.SetActive(true);
 			Time.timeScale = .25f;
 			Invoke ("Reset", resetDelay);
-		}
-		
+		}		
 	}
 
 	/**
