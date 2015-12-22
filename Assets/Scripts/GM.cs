@@ -41,7 +41,7 @@ public class GM : MonoBehaviour
 	public void Setup()
 	{
 		SetupPaddle ();
-		SetupBricks ();
+		Instantiate (bricksPrefab, transform.position, Quaternion.identity);
 	}
 
 	/**
