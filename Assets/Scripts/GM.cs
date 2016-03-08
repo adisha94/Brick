@@ -89,7 +89,7 @@ public class GM : MonoBehaviour
 
 	/**
 	 * 
-	 * initial setup of the paddle upon level loaduout
+	 * Initial setup of the paddle upon level loaduout
 	 **/
 	void SetupPaddle()
 	{
@@ -98,7 +98,7 @@ public class GM : MonoBehaviour
 
 	/**
 	 * 
-	 * initial setup of the Bricks upon level loaduout
+	 * Initial setup of the Bricks upon level loaduout
 	 **/
 	void SetupBricks()
 	{
@@ -106,7 +106,7 @@ public class GM : MonoBehaviour
 	}
 
 	/**
-	 * Executes upon impact of ball on object
+	 * Executes upon impact of ball on brick
 	 **/
 	public void DestroyBrick()
 	{

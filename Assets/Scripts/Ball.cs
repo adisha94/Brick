@@ -7,7 +7,7 @@ public class Ball : MonoBehaviour
 	public float ballInitialVelocity = 600f;
 	
 	
-	private Rigidbody rb;
+	private Rigidbody rb; // short form for rigidbody
 	private bool ballInPlay;
 
 
