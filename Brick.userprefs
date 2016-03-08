@@ -1,8 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="../Carrum/Assets/main Scripts/Point_Score.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ball.cs">
     <Files>
-      <File FileName="../Carrum/Assets/main Scripts/Point_Score.cs" Line="56" Column="41" />
+      <File FileName="Assets/Scripts/Bricks.cs" Line="9" Column="47" />
+      <File FileName="Assets/Scripts/GM.cs" Line="113" Column="12" />
+      <File FileName="Assets/Scripts/Ball.cs" Line="17" Column="3" />
+      <File FileName="Assets/Scripts/TimedDestroy.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Paddle.cs" Line="18" Column="2" />
+      <File FileName="Assets/Scripts/DeadZone.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
